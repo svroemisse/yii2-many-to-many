@@ -66,7 +66,7 @@ class ManyToManyValidator extends Validator
         }
 
         if (!$relation) {
-            throw new InvalidConfigException("Relation not detected.");
+            throw new InvalidConfigException("Relation '{$attribute}' not detected.");
         }
 
         $primaryKeys = $model->$attribute;
